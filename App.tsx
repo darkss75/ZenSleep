@@ -1,10 +1,10 @@
 
 import React, { useState, useEffect } from 'react';
-import { AppScreen, Alarm } from './types';
-import AlarmsScreen from './components/AlarmsScreen';
-import MissionScreen from './components/MissionScreen';
-import AnalysisScreen from './components/AnalysisScreen';
-import Navigation from './components/Navigation';
+import { AppScreen, Alarm } from './types.ts';
+import AlarmsScreen from './components/AlarmsScreen.tsx';
+import MissionScreen from './components/MissionScreen.tsx';
+import AnalysisScreen from './components/AnalysisScreen.tsx';
+import Navigation from './components/Navigation.tsx';
 
 const INITIAL_ALARMS: Alarm[] = [
   { id: '1', time: '06:30', period: 'AM', label: 'Wake up & Shine', days: ['M', 'T', 'W', 'T', 'F'], isActive: true },
