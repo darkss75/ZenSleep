@@ -1,16 +1,25 @@
 
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import { createRoot } from 'react-dom/client';
 import App from './App.tsx';
 
-const rootElement = document.getElementById('root');
-if (!rootElement) {
-  throw new Error("Could not find root element to mount to");
-}
+console.log("ZenSleep: Initializing application...");
 
-const root = ReactDOM.createRoot(rootElement);
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+const rootElement = document.getElementById('root');
+
+if (!rootElement) {
+  console.error("ZenSleep: Root element not found!");
+} else {
+  try {
+    const root = createRoot(rootElement);
+    root.render(
+      <React.StrictMode>
+        <App />
+      </React.StrictMode>
+    );
+    console.log("ZenSleep: Application rendered successfully.");
+  } catch (error) {
+    console.error("ZenSleep: Rendering failed:", error);
+    rootElement.innerHTML = `<div style="padding: 20px; color: red;">Failed to load ZenSleep. Please check console.</div>`;
+  }
+}
