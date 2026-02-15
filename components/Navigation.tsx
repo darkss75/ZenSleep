@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { AppScreen } from '../types';
+import { AppScreen } from '../types.ts';
 import { AlarmClock, BarChart3, Music2, User } from 'lucide-react';
 
 interface Props {
