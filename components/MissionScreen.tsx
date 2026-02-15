@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Alarm as AlarmIcon, Psychology, Backspace } from '../icons';
+import { Alarm as AlarmIcon, Psychology, Backspace } from '../icons.tsx';
 import { Delete } from 'lucide-react';
 
 interface Props {

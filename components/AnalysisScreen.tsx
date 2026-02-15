@@ -2,7 +2,7 @@
 import React from 'react';
 import { Calendar, TrendingUp, Moon, Timer, Lightbulb, Sun, BarChart3 } from 'lucide-react';
 import { BarChart, Bar, ResponsiveContainer, XAxis, Cell } from 'recharts';
-import { SleepDataPoint } from '../types';
+import { SleepDataPoint } from '../types.ts';
 
 const SLEEP_HISTORY: SleepDataPoint[] = [
   { day: 'M', quality: 70 },

@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Alarm } from '../types';
+import { Alarm } from '../types.ts';
 import { Plus, Bell, SignalHigh, Wifi, BatteryFull } from 'lucide-react';
 
 interface Props {
