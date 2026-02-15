@@ -1,0 +1,18 @@
+
+{
+  "name": "ZenSleep Smart Alarm",
+  "short_name": "ZenSleep",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#47c2eb",
+  "description": "Wake up your brain with smart missions and analyze your sleep.",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/3094/3094837.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
